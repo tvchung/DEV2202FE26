@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTTML5</title>
+</head>
+<body>
+    <h1>Table in HTTML5</h1>
+    <hr>
+    <table border="1px" width="80%" align="center"
+        cellspacing="0" cellpadding="5">
+        <!-- vùng tiêu đề -->
+        <thead bgcolor="#fcf">
+            <tr>
+                <th rowspan="2">ID</th>
+                <th rowspan="2">Name</th>
+                <th colspan="3">Mark</th>
+            </tr>
+            <tr bgcolor="green">
+                <th>Toán</th>
+                <th>Lý</th>
+                <th>Hóa</th>
+            </tr>
+        </thead>
+        <!-- Vùng nội dung  -->
+        <tbody>
+            <tr>
+              <td>101</td>  
+              <td><a href="chungtrinh.html">
+                Chung Trịnh
+              </a></td>
+              <td align="center">5</td>
+              <td align="center">9</td>
+              <td align="center">10</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Minh Chính</td>
+                <td align="center">8</td>
+                <td align="center">9</td>
+                <td align="center">10</td>
+            </tr>
+        </tbody>
+        <!-- Vùng cuối bảng -->
+        <tfoot>
+            <tr>
+                <th colspan="2">Trung bình</th>
+                <th>...</th>
+                <th>...</th>
+                <th>...</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

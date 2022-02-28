@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson01 - Cấu trúc, các thẻ cơ bản,...</title>
+</head>
+<body>
+    <h1>Review  các thẻ cơ bản trong html5 </h1>
+    <hr/>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Fuga blanditiis mollitia repellendus impedit 
+         voluptates ex, nihil fugit veniam minus beatae. 
+         Consequuntur illo recusandae vero est magnam ipsa 
+         error necessitatibus totam?
+    </p>
+    <p>
+        <b>Chữ đậm</b>
+        <br>
+        <i>Chữ nghiêng</i>
+        <br>
+        <u>Gạch chân</u>
+        <br>
+        <del>Chữ xóa</del>
+        <br>
+        <small>Chữ nhỏ</small>
+    </p>
+    <hr>
+    <h2>Hiển thị hình ảnh</h2>
+    <pre>
+        Sử dụng thẻ img 
+        * Thuộc tính:
+            - src: [url] => Địa chỉ hình ảnh
+                + Địa chỉ tuyệt đối:
+                    [giao thức]://domain/path-folder/file ...
+                 vd: https://devmaster.edu.vn/images/logo.png
+                + Địa chỉ tương đối: tính từ thư mục chứa file html 
+                    => vào trong thư mục: 
+                        thumuc1/thumuc2/.../tenfile 
+                        Ví dụ: image/logo.png 
+                    => ra ngoài 1 thư mục: ../ 
+                        ví dụ: ../tenfile ;../../tenfile 
+                                ../thumuc/tenfile  
+            - alt: chứa nội dung văn bản (không nên để trống)                   
+    </pre>
+    <p> Sử dụng địa chỉ tuyệt đối:
+        <br>
+        <img src="https://devmaster.edu.vn/images/logo.png" 
+            alt="Viện Công Nghệ Và Đào Tạo Devmaster">
+    </p>
+    <p>
+        Sử dụng đường dẫn tương đối: <br>
+        <img src="images/asp.jpg" alt="ASP">
+    </p>
+    <hr>
+    <h3>Liên kết site</h3>
+    <pre>
+        Sử dụng thẻ liên kết a 
+        * Thuộc tính:
+            - href: [url] địa chỉ trang cần liên kết đến
+            - title: nội dung văn bản
+            - target:  đích đến
+    </pre>
+    <p>
+        <a href="https://devmaster.edu.vn"
+            title="Devmaster Academy" 
+            target="_blank">
+            Devmaster Academy
+        </a>
+    </p>
+    <p>
+        <a href="pages/p1.html">
+            Đến trang P1
+        </a>
+    </p>
+    <h3>Thẻ hiển thị danh sách....</h3>
+</body>
+</html>
