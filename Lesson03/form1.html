@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form và các điều khiển trên form</title>
+</head>
+<body>
+    <h1>Form và các điều khiển trên form</h1>
+    <hr>
+    <pre>
+        1. Sử dụng thẻ form 
+            Thuộc tính: 
+                id
+                name
+                action: url
+                method: post/get/put/delete 
+        2. Các điều khiển trên form:
+            a) Input: 
+            * kiểu input => quy định thông qua thuộc tính type
+            Type: 
+    </pre>
+    <form action="">
+    <p>
+        - text (mặc định):
+        <input type="text" name="txt" placeholder="ô nhập văn bản">
+    </p>               
+    <p>
+        - password: ***:
+        <input type="password" name="pass" id="pass" 
+            value="abc@1234$"
+            placeholder="Nhập mật khẩu">
+    </p>
+    <p>
+        - hidden: điểu khiển ẩn:
+        <input type="hidden" name="hid">
+    </p> 
+    <p>
+        - checkbox: ô chọn nhiều trong nhiều khả năng lựa chọn:
+        <input type="checkbox" name="chk1" id="chk1"> 
+        <label for="chk1">Check1</label>
+        <br>
+        <input type="checkbox" name="chk1" id="chk2"> 
+        <label for="chk2">Check2</label>
+        <br>
+        <input type="checkbox" name="chk1" id="chk3"> 
+        <label for="chk3">Check3</label>
+    </p>
+    <p>
+        - radio: chọn một trong nhiều khả năng lựa chọn:
+        <br>
+
+        <input type="radio" name="rd1" id="rd1">
+        <label for="rd1">Radio 1</label>
+        
+        <br>
+        <input type="radio" name="rd1" id="rd2">
+        <label for="rd2">Radio 2</label>
+        <br>
+        <input type="radio" name="rd1" id="rd3">
+        <label for="rd3">Radio 3</label>
+    </p>
+    <p>
+        - number:
+        <input type="number" name="num" id="num">
+    </p>
+    <p>
+        - range:
+        <input type="range" name="rang" id="rang" min="0" max="10" value="3">
+    </p>
+    <p>
+        - data:
+        <input type="date" name="ngay" id="ngay">
+    </p>
+    <p>
+        - Datetime:
+        <input type="datetime" name="ngaygio" id="ngaygio">
+    </p>
+    <p>
+        -datetime local:
+        <input type="datetime-local" name="dtime" id="dtime">
+    </p>
+    <p>
+        - file:
+        <input type="file" name="chon" id="chon">
+    </p>
+    <p>
+        - color:
+        <input type="color" name="cls" id="cls">
+    </p>
+    <p>
+        - email:
+        <input type="email" name="mail" id="mail">
+    </p>
+    <p>
+        - tel:
+        <input type="tel" name="dthoai" id="dthoai">
+    </p>
+    <p>
+        button:
+        <input type="button" value="Chọn">
+        <input type="reset" value="Làm lại">
+        <input type="submit" value="Gửi đi">
+    </p>
+    <p>
+        -- select: 
+        <select name="chon" id="chon">
+            <option value="1">Hà nội</option>
+            <option value="2">Tp HCM</option>
+            <option value="3">Tp Đã nẵng</option>
+            <option value="4">Cần thơ</option>
+        </select>
+    </p>
+    <p>
+        -- textarea : address 
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </p>
+</form>
+</body>
+</html>
