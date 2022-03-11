@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sử dụng css với html</title>
+</head>
+<body>
+    <h1>Các sử dụng css với html </h1>
+    <pre>
+        có 3 cách:
+        1. Style inline:
+            - quy tắc css là giá trị của thuộc tính style trong phần tử html 
+            - ví dụ:style = "color:red"
+    </pre>
+    <p style="background-color: green;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Laboriosam inventore, pariatur dignissimos repellendus id, 
+        modi voluptas ipsum vel voluptate quam soluta cumque labore temporibus aliquid ab? 
+        Omnis ipsa ratione reiciendis.
+    </p>
+    <hr>
+    <pre>
+        2. thiết lập các quy tắc css trong 
+            phần tử style 
+        Chú ý: nên đặt thẻ style trong phần head 
+    </pre>
+    <style>
+        /* nên đặt trong head */
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <hr>
+    <pre>
+        3. thiết lập các quy tắc cho các bộ chọn html 
+            trên file .css 
+           - liên kết file css với file html 
+            thông qua thẻ link hoặc import 
+           - ví dụ:
+
+        Ghi chú:
+            -  nên nhúng file css vào trong file html 
+            trên phần head 
+    </pre>
+    <link rel="stylesheet" href="css1.css">
+</body>
+</html>

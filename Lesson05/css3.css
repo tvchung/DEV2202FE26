@@ -1,0 +1,96 @@
+/* Bộ chọn tất cả phần tử */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+/* Bộ chọn phần tử
+tag{....}
+*/
+h1{
+    color: red;
+}
+/* Bộ chọn class
+.class-name{...}
+*/
+.title{
+    font-size: x-large;
+}
+/* Bộ chọn id 
+#id-name{....}
+*/
+#zone1{
+    margin: 1rem 10%;
+    border: 1px solid orange;
+    height: 100px;
+}
+/* Bộ chọn các phần tử giống nhau
+    tag01,tag02, tag03{
+        ....
+    }
+*/
+h1, h2{
+    font-family: 'Times New Roman';
+}
+/* Bộ chọn
+    tag01  tag02{
+        ....
+    }
+*/
+#zone2 p{
+    margin: 1rem 2rem;
+    border-bottom: 3px solid red;
+}
+/* Bộ chọn 
+    tag01 > tag02 {
+        ....
+    }
+*/
+#zone2 > p {
+    background-color: green;
+}
+
+/* note */
+#zone2 .item p{
+    color: blue;
+}
+ /* Bộ chọn 
+        tag01 + tag02{...} 
+*/
+#zone3, #zone4, #zone5{
+    margin:1rem 5%;
+    border-bottom: 2px dotted red;
+}
+#zone3 .abc + p{
+    color:blueviolet;
+}
+/* Bộ chọn 
+tag01 ~ tag02{
+    ...
+}
+*/
+#zone4 .abc ~ p{
+    color:blueviolet;
+}
+/* Bộ chọn
+
+    tag01:hover{...}
+    tag01:first-line{...}
+        ....
+*/
+#zone5 p:hover{
+    background-color: cyan;
+    cursor: pointer;
+}
+#zone5 p::first-letter{
+    font-size: 150%;
+}
+#zone5  p:first-child{
+    color: blue;
+}
+#zone5  p:last-child{
+    color: yellow;
+}
+#zone5 p:nth-child(2n+1){
+    background-color: green;
+}
