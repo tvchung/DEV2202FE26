@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    margin:1rem 10%;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin:1rem 0
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 33.333333%;
+}
+#kien-thuc img {
+    width: 100%;
+    height: 12rem;
+}
+#kien-thuc .item {
+    margin: 0 .75rem 1.5rem .75rem;
+}
+#kien-thuc h3 a {
+    color:rgb(58, 57, 57);
+    font-size: 1rem;
+    text-decoration: none;
+    display: block;
+    padding: .5rem 0;
+}
+#kien-thuc p{
+    color:#777
+}
+@media only screen and (min-width:1368.99px) {
+    .container{
+        margin:1.5rem auto;
+        width: 1368px !important;
+    }
+}
+/* responsive desktop*/
+@media only screen and (min-width:1024.99px) and (max-width:1368px){
+    html,body{
+        font-size: 16px;
+    }
+
+    .container{
+        margin:1rem auto ;
+        width: 1000px !important;
+    }
+
+    .col{
+        width:33.333333%;
+    }
+
+    #kien-thuc img {
+        width: 100%;
+        height: 10rem;
+    }
+}
+/* responsive ipad pro*/
+@media only screen and (max-width:768.99px) and (max-width:1024px){
+    html,body{
+        font-size: 16px;
+    }
+
+    .container{
+        margin:1.5rem;
+    }
+
+    .col{
+        width:33.333333%;
+    }
+
+    #kien-thuc img {
+        width: 100%;
+        height: 12rem;
+    }
+}
+/* responsive ipad */
+@media only screen and (max-width:768.99px) and (max-width:1024px){
+    html,body{
+        font-size: 14px;
+    }
+
+    .container{
+        margin:1.5rem;
+    }
+
+    .col{
+        width:50%;
+    }
+
+    #kien-thuc img {
+        width: 100%;
+        height: 12rem;
+    }
+}
+/* responsive mobile */
+@media only screen and (max-width:414px){
+    html,body{
+        font-size: 12px;
+    }
+
+    .container{
+        margin:1rem;
+    }
+
+    .col{
+        width:100%;
+    }
+
+    #kien-thuc img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
