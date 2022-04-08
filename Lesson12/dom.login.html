@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login information</title>
+</head>
+<body>
+    <section id="login">
+        <form action="">
+            <div>
+                <img src="https://devmaster.edu.vn/images/logo.png" 
+                    alt="Devmaster Academy">
+            </div>
+            <div>
+                <label for="taiKhoan">Tài khoản:</label>
+                <div>
+                    <input type="text" name="taiKhoan" id="taiKhoan"
+                        placeholder="Nhập tài khoản....">
+                    <span id="errTk" class="error">(*)</span>
+                </div>
+            </div>
+            <div>
+                <label for="matKhau">Mật khẩu:</label>
+                <div>
+                    <input type="password" name="matKhau" id="matKhau"
+                        placeholder="Nhập mật khẩu...">
+                    <span id="errMk" class="error">(*)</span>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="ghiNho" id="ghiNho">
+                <label for="ghiNho">Ghi nhớ</label>
+            </div>
+            <div>
+                <input type="button" value="Đăng nhập" onclick="dangNhap();">
+                <input type="reset" value="Làm lại">
+            </div>
+        </form>
+    </section>
+    <script>
+        function dangNhap(){
+            debugger;
+            // lấy giá trị trên form thông qua DOM
+            let tdn = document.getElementById('taiKhoan').value;
+            let mk = document.getElementById('matKhau').value;
+            // kiểm tra tài khoản không trống
+            if(tdn.trim() == ""){
+                document.getElementById('errTk').innerHTML ="<i> Bạn chưa nhập tài khoản </i>";
+            }else{
+                document.getElementById('errTk').innerHTML = "OK";
+            }
+
+            //kiểm tra mật khẩu không rỗng
+            if(mk.trim() == ""){
+                document.getElementById('errMk').innerHTML ="<i> Bạn chưa nhập mật khẩu </i>";
+                // return;
+            }else if (mk.length < 8){
+                document.getElementById('errMk').innerHTML ="<i>Mật khẩu ít nhất 8 ký tự </i>";
+            }else{
+                document.getElementById('errMk').innerHTML = "OK";
+            }
+            
+            // mật khẩu có độ dài ít nhất 8 ký tự
+            // if(mk.length < 8){
+            //     document.getElementById('errMk').innerHTML ="<i>Mật khẩu ít nhất 8 ký tự </i>";
+            // }else{
+            //     document.getElementById('errMk').innerHTML = "OK";
+            // }
+            // làm gì đó thì làm
+
+            // Bài tập: sử dụng mô hình dom, thực hiện kiểm tra form đăng ký
+        }
+    </script>
+</body>
+</html>

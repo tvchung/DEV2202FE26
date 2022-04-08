@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập vào 2 số a, b (prompt)
+        // tính toán trên 2 số a,b với các phép toán (số học, so sánh, logic ,...)
+        // => in kết quả bằng console 
+        // 10'
+        a=prompt("Nhập a=");
+        b=prompt("Nhập b=");
+
+        // tính toán số học
+        // chuyển sang dạng số
+        a=parseFloat(a);
+        b=eval(b);
+
+        c = a+b;
+        console.log(a,"+",b,"=",c);
+        c = a-b;
+        console.log(a,"-",b,"=",c);
+        c = a*b;
+        console.log(a,"*",b,"=",c);
+        c = a/b;
+        console.log(a,"/",b,"=",c);
+        c = a%b;
+        console.log(a,"%",b,"=",c);
+
+        // phép so sánh
+        c = a==b;
+        console.log(a,"==",b,"=>",c);
+        c = a>=b;
+        console.log(a,">=",b,"=>",c);
+        c = a<=b;
+        console.log(a,"<=",b,"=>",c);
+        c = a===b;
+        console.log(a,"===",b,"=>",c);
+
+        // logic
+        c=(a>b) && (b%2==0);
+        console.log(c);
+        
+        c=(a>b) || (b%2==0);
+        console.log(c);
+
+        
+        c=!((a>b) && (b%2==0));
+        console.log(c);
+    </script>
+</body>
+</html>

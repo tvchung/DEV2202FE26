@@ -1,0 +1,79 @@
+<script>
+    //  sử dụng đôi tượng trong javascript
+    // tạo đối tượng
+
+    // cách 1
+    var student = new Object();
+    // tạo thuộc tính cho đối tượng
+    student.fullName ='';
+    student.age=0;
+    student.address='25 Vũ Ngọc Phan';
+    // tạo hành vi
+    student.print = function(){
+        document.write("<p>FullName:" + this.fullName);
+        document.write("<p>Age:" + this.age);
+        document.write("<p>Address:" + this.address);
+    }
+
+    // sử dụng
+    //  gọi thực hiện hành vi
+    student.print();
+    // sử dụng thuộc tính
+    student.fullName ='Chung Trịnh Văn';
+    student.age=50;
+    student.address='25 Vũ Ngọc Phan';
+
+    student.print();
+
+    // cách 2:
+    // sử dụng cặp {}
+    var emp = {};
+    // thuộc tính
+    emp.fullName = "Nguyễn Viết Code Giỏi";
+    emp.address = "Hà nội mùa thu";
+    emp.salary = 123456789;
+    // phương thức
+    emp.printInfor = function(){
+        document.write("<p>FullName:" + this.fullName);
+        document.write("<p>Salary:" + this.salary);
+        document.write("<p>Address:" + this.address);
+    }
+    // sử dụng
+    emp.printInfor();
+
+    // sử dụng thuộc tính, gán giá trị mới và sử dụng
+    // my infor
+    emp.fullName = "Nguyễn Quang A";
+    emp.address = "123 Hà nội";
+    emp.salary = 123456789;
+    emp.printInfor();
+
+    // cách 3:
+    var product = {
+        // thuộc tính
+        name: 'Iphone 13 Pro Max',
+        price: 25000000,
+        qty: 100,
+        // phương thức
+        addInfor:function(name,qty,price){
+            this.name = name;
+            this.qty=qty;
+            this.price=price;
+        },
+        printInfo: function(){
+            document.write("<p>Name:" + this.name);
+            document.write("<p>Quantiy:" + this.qty);
+            document.write("<p>Price:" + this.price);
+            document.write("<p>Totl:" + this.price*this.qty);
+        }
+    };
+    // gọi thực hiện
+    product.printInfo();
+
+    product.addInfor("IPhone 15 ProMax",123,30000000);
+    product.printInfo();
+
+    // tạo mảng sản phẩm gồm 10 sản phẩm;
+    // in ra màn hình theo dạng bảng
+
+</script>

@@ -1,0 +1,77 @@
+<script>
+    // hàm trong javascript
+    // 1. khai báo, định nghĩa hàm
+    // *) Hàm không trả về giá trị xác định
+    function display(){
+        console.log("Hàm không trả về giá trị xác định");
+    }
+    function tinhToan(a,b){
+        let c = a+b;
+        console.log(a,'+',b,'=',c);
+    }
+    // *) hàm có giá trị trả về (sử dụng lệnh return)
+    function mayTinh(a,b,pt){
+        let c = eval(a + pt + b);
+        return c;
+    }
+
+    // 2. Sử dụng hàm (gọi thực hiện)
+    display();
+    tinhToan(100,200);
+
+    kq = mayTinh(100,200,"+");
+    console.log(kq);
+    kq = mayTinh(100,200,"-");
+    console.log(kq);
+    kq = mayTinh(100,200,"*");
+    console.log(kq);
+    kq = mayTinh(100,200,"/");
+    console.log(kq);
+    kq = mayTinh(100,200,"%");
+    console.log(kq);
+    
+    
+
+    const mTinh = function(num){return num*num};
+    kq =mTinh(5);
+    console.log(kq);
+
+    const mTinh1 = (a,b)=> { return a*b};
+    console.log(mTinh1(10,20));
+
+
+    // bài thực hành 04
+    var str = "Cộng hòa xã hội chủ nghĩa việt nam";
+    console.log(str, str.length);
+    for (let i = 0; i < str.length; i++) {
+        console.log(str[i], str.charCodeAt(i));
+    }
+
+    // bài thực hành số 05
+    str = "a học lập trình web z";
+    console.log(str, "=> độ dài:",str.length);
+    console.log("Char Code");
+    let newText="";
+    for (let i = 0; i < str.length; i++) {
+        if(i==0){
+            newText +=str.charCodeAt(i);
+        }else{
+            newText +=","+str.charCodeAt(i);
+        }
+    }
+    console.log(newText);
+    // chuyển ngược laiij
+    let arrCode = newText.split(',');
+    console.log(arrCode);
+    let txt="";
+    for (let i = 0; i < arrCode.length; i++) {
+        txt +=String.fromCharCode(arrCode[i]);
+    }
+    console.log(txt);
+
+    /*
+    Bài tập:
+        cho một xâu title (ví dụ: title="Học lập trình web");
+        => in ra xâu tương ứng (slug = hoc-lap-trinh-web)
+    */
+</script>
