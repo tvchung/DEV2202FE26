@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng jquery vào html</title>
+</head>
+<body>
+    <h1>Nhúng jquery vào html</h1>
+    <pre>
+        1. tải thư viện jquery từ trang chủ 
+            jquery.com 
+        2. Nhúng trực tiếp từ server google, cdn
+            link  => xem jq2.html
+    </pre>
+
+    <!-- nhúng jquery  -->
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script>
+        //var elem = document.getElementById("h1")[0];
+
+        $(document).ready(function(){
+            $("h1").hover(function(){
+                $(this).css('color','red');
+            });
+        });
+    </script>
+</body>
+</html>

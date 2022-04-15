@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <h1>Regular Expression</h1>
+    <script>
+        var regx = /Devmaster/i;
+        str = "Chào mừng bạn đến với devmaster academy";
+        if(regx.test(str)){
+            document.write("<p> Chuỗi " + str + " có chứa");
+        }else{
+            document.write("<p> Chuỗi " + str +" không chứa.");
+        }
+
+        regx = /[a-d]+/;
+        str = "ghikbbb";
+        if(regx.test(str)){
+            document.write("<p> có");
+        }else{
+            document.write("<p> không");
+        }
+
+        // email mẫu
+
+        const checkEmail = (strInput)=>{
+            // let regEmail = /[a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}$/i;
+            // let regEmail = /([a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}$)|([a-zA-Z0-9]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}[.][a-zA-Z]{2}$)/i;
+            let regEmail = /(^[a-zA-Z0-9_]+[.]*[a-zA-Z0-9_]+[@][a-zA-Z]+[.][a-zA-Z]{2,4}$)|(^[a-zA-Z0-9_]+[.]*[a-zA-Z0-9_]+(\@)[a-zA-Z]+[.][a-zA-Z]{2,4}[.][a-zA-Z]{2}$)/i;
+            if(regEmail.test(strInput)){
+                document.write("<p> Đúng địa chỉ email: " +strInput);
+            }else{
+                document.write("<p> Không đúng địa chỉ email: " +strInput);
+            }
+        }
+
+        // test
+        checkEmail("_chung.trinh_@gmail.vn");
+        checkEmail("chung@gmail.com");
+        checkEmail("chung@gmail.info");
+        checkEmail("chung@gmail.info.cnn");
+        checkEmail("ch.ung@gmail.com.vn");
+
+        // bài tập: test phone
+        // (+84) xxxx-xxx-xxx ; x là các số 0-9
+
+    </script>
+</body>
+</html>
